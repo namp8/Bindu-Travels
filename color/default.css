@@ -11,17 +11,17 @@ a, a:hover {
 
 
 .back-to-top:focus {
-  background: #e61f26;
+  background: #3A3A3A;
   color: #fff;
 }
 
 .back-to-top:hover {
-  background: #861519;
+  background: #3A3A3A;
   color: #fff;
 }
 
 .navbar-default {
-  background: #e61f26;
+  background: #fff;
 }
 
 .form-control:focus {

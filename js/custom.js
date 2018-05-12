@@ -76,17 +76,7 @@
     speed: 4000
   });
 
-  // Fixed navbar
-  $(window).scroll(function() {
 
-    var scrollTop = $(window).scrollTop();
-
-    if (scrollTop >= 0) {
-      $('.navbar-default').css('display', 'block');
-      $('.navbar-default').addClass('fixed-to-top');
-
-    } 
-  });
 
 
   //parallax
@@ -103,29 +93,6 @@
 
   }
 
-  function navbar() {
-
-      $('#navigation').addClass('show-nav');
-  }
-
-  $(document).ready(function() {
-
-      $('.navbar-default').css('display', 'block');
-      $('.navbar-default').addClass('fixed-to-top');
-      
-    
-
-  });
-
-
-  $(window).resize(function() {
-
-   
-      $('.navbar-default').css('display', 'block');
-      $('.navbar-default').addClass('fixed-to-top');
-
-  });
-
 
   // Carousel
   $('.service .carousel').carousel({
@@ -139,5 +106,26 @@
 
   //animation
   new WOW().init();
+    
+    
+    //Google Map
+    var get_latitude = $('#google-map').data('latitude');
+    var get_longitude = $('#google-map').data('longitude');
+
+    function initialize_google_map() {
+        var myLatlng = new google.maps.LatLng(get_latitude, get_longitude);
+        var mapOptions = {
+            zoom: 18,
+            scrollwheel: false,
+            center: myLatlng
+        };
+        var map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
+        var marker = new google.maps.Marker({
+            position: myLatlng,
+            map: map,
+              animation: google.maps.Animation.DROP
+        });
+    }
+    google.maps.event.addDomListener(window, 'load', initialize_google_map);
 
 })(jQuery);

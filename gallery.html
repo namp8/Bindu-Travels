@@ -22,40 +22,63 @@
 
 <body>
     
-    
     <!-- Navigation -->
-  <nav class="navbar navbar-default" role="navigation">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+    <nav class="navbar navbar-default fixed-to-top"  role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
           <span class="sr-only">Toggle nav</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
 
-        <div class="navbar-brand">
-            <a href="index.html">
-                <img class="logo" src="img/logobw.png" alt="Bindu Travels and Tours Ltd." height="100%"/>
+                <div class="navbar-brand">
+                    <a href="index.html">
+                <img class="logo" src="img/logo.png" alt="Bindu Travels and Tours Ltd." height="100%"/>
             </a>
-        </div>  
+                </div>
 
-      </div>
-      <div class="navigation collapse navbar-collapse navbar-ex1-collapse">
-        <ul class="nav navbar-nav">
-          <li class="current"><a href="index.html">Home</a></li>
-          <li><a href="aboutus.html">About us</a></li>
-          <li><a href="cruises.html">Cruises</a></li>
-          <li><a href="holidays.html">Holiday packages</a></li>
-          <li><a href="gallery.html">Photo gallery</a></li>
-          <li><a href="contactus.html">Contact us</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+            </div>
+            <div class="navigation collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="aboutus.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About us <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="aboutus.html#about">About us</a></li>
+                            <li><a href="aboutus.html#team">Our People</a></li>
+                            <li><a href="aboutus.html#services">Services</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cruises <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="cruises/destinations.html">Destinations</a></li>
+                            <li><a href="cruises/ships.html">Ships</a></li>
+                            <li><a href="cruises/schedule.html">Schedule</a></li>
+                            <li><a href="cruises/activities.html">Activities on board</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="cruises/book.html"><b>¡BOOK A CRUISE!</b></a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Holiday packages <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="holidays/destinations.html">Destinations</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="holidays/book.html"><b>¡BOOK A PACKAGE!</b></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contactus.html">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     
  <!-- About -->
-  <section id="about" class="home-section bg-white">
+  <section id="about" class="home-section bg-gray">
     <div class="container">
       <div class="row">
         <div class="col-md-offset-2 col-md-8">
@@ -74,103 +97,103 @@
 
           <div class="portfolio-container">
 
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits webdesign">
+            <div class="col-lg-2 col-md-3 portfolio-thumbnail all branding uikits webdesign">
               <a class="popup-img" href="images/portfolio/1.jpg">
                 <img src="img/bgslides/2.jpg" alt="img">
               </a>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits photography">
+            <div class="col-lg-2 col-md-3 portfolio-thumbnail all mockups uikits photography">
               <a class="popup-img" href="images/portfolio/2.jpg">
                 <img src="img/bgslides/2.jpg"  alt="img">
               </a>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding webdesig photographyn">
+            <div class="col-lg-2 col-md-3 portfolio-thumbnail all branding webdesig photographyn">
               <a class="popup-img" href="images/portfolio/3.jpg">
                 <img src="img/bgslides/2.jpg" alt="img">
               </a>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups webdesign photography">
+            <div class="col-lg-2 col-md-3 portfolio-thumbnail all mockups webdesign photography">
               <a class="popup-img" href="images/portfolio/4.jpg">
                 <img src="img/bgslides/2.jpg" alt="img">
               </a>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits photography">
+            <div class="col-lg-2 col-md-3 portfolio-thumbnail all branding uikits photography">
               <a class="popup-img" href="images/portfolio/5.jpg">
                 <img src="img/bgslides/2.jpg" alt="img">
               </a>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits webdesign">
+            <div class="col-lg-2 col-md-3 portfolio-thumbnail all mockups uikits webdesign">
               <a class="popup-img" href="images/portfolio/6.jpg">
                 <img src="img/bgslides/2.jpg" alt="img">
               </a>
             </div>
-              <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits webdesign">
+              <div class="col-lg-2 col-md-3 portfolio-thumbnail all branding uikits webdesign">
               <a class="popup-img" href="images/portfolio/1.jpg">
                 <img src="img/bgslides/2.jpg" alt="img">
               </a>
             </div>
-              <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits webdesign">
+              <div class="col-lg-2 col-md-3 portfolio-thumbnail all mockups uikits webdesign">
               <a class="popup-img" href="images/portfolio/6.jpg">
                 <img src="img/bgslides/2.jpg" alt="img">
               </a>
             </div>
-              <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits webdesign">
+              <div class="col-lg-2 col-md-3 portfolio-thumbnail all branding uikits webdesign">
               <a class="popup-img" href="images/portfolio/1.jpg">
                 <img src="img/bgslides/2.jpg" alt="img">
               </a>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits webdesign">
+            <div class="col-lg-2 col-md-3 portfolio-thumbnail all branding uikits webdesign">
               <a class="popup-img" href="images/portfolio/1.jpg">
                 <img src="img/bgslides/2.jpg" alt="img">
               </a>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits photography">
+            <div class="col-lg-2 col-md-3 portfolio-thumbnail all mockups uikits photography">
               <a class="popup-img" href="images/portfolio/2.jpg">
                 <img src="img/bgslides/2.jpg"  alt="img">
               </a>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding webdesig photographyn">
+            <div class="col-lg-2 col-md-3 portfolio-thumbnail all branding webdesig photographyn">
               <a class="popup-img" href="images/portfolio/3.jpg">
                 <img src="img/bgslides/2.jpg" alt="img">
               </a>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups webdesign photography">
+            <div class="col-lg-2 col-md-3 portfolio-thumbnail all mockups webdesign photography">
               <a class="popup-img" href="images/portfolio/4.jpg">
                 <img src="img/bgslides/2.jpg" alt="img">
               </a>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits photography">
+            <div class="col-lg-2 col-md-3 portfolio-thumbnail all branding uikits photography">
               <a class="popup-img" href="images/portfolio/5.jpg">
                 <img src="img/bgslides/2.jpg" alt="img">
               </a>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits webdesign">
+            <div class="col-lg-2 col-md-3 portfolio-thumbnail all mockups uikits webdesign">
               <a class="popup-img" href="images/portfolio/6.jpg">
                 <img src="img/bgslides/2.jpg" alt="img">
               </a>
             </div>
-              <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits webdesign">
+              <div class="col-lg-2 col-md-3 portfolio-thumbnail all branding uikits webdesign">
               <a class="popup-img" href="images/portfolio/1.jpg">
                 <img src="img/bgslides/2.jpg" alt="img">
               </a>
             </div>
-              <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits webdesign">
+              <div class="col-lg-2 col-md-3 portfolio-thumbnail all mockups uikits webdesign">
               <a class="popup-img" href="images/portfolio/6.jpg">
                 <img src="img/bgslides/2.jpg" alt="img">
               </a>
             </div>
-              <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits webdesign">
+              <div class="col-lg-2 col-md-3 portfolio-thumbnail all branding uikits webdesign">
               <a class="popup-img" href="images/portfolio/1.jpg">
                 <img src="img/bgslides/2.jpg" alt="img">
               </a>
@@ -185,15 +208,75 @@
   </section>      
     
      <!-- Footer -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <p>Copyright &copy; Bindu Travels and Tours Ltd. All rights reserved.</p>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="contact-widget wow bounceInLeft">
+                        <i class="fa fa-map-marker fa-4x"></i>
+                        <h5>Main Office</h5>
+                        <p>
+                            Fayorsey House,<br />Ground Floor,<br />Osu R.E.<br />Accra,<br />Ghana
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="contact-widget wow bounceInLeft">
+                        <i class="fa fa-phone fa-4x"></i>
+                        <h5>Call</h5>
+                        <p>
+                            +233 030 276 1693<br> +233 024 460 7070<br> +233 024 494 1941<br> +233 024 367 4444<br> +233 026 390 0006<br>
+
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="contact-widget wow bounceInLeft">
+                        <i class="fa fa-envelope fa-4x"></i>
+                        <h5>Email us</h5>
+                        <p>
+                            <br /><a class="link" href="mailto:sales@bindutravels.com">sales@bindutravels.com</a><br /><a class="link" href="mailto:cruises@bindutravels.com">cruises@bindutravels.com</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class=" wow bounceInRight">
+                        <h5>We're on social networks</h5>
+                        <ul class="social-network">
+                            <li><a href="https://facebook.com/bindutravelsandtours/" target=“_blank”>
+                            <span class="fa-stack fa-2x">
+                                <i class="fa fa-circle fa-stack-2x" style="color: #e61f26;"></i>
+                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                            </span></a>
+                            </li>
+                            <li><a href="https://www.instagram.com/bindutravels/" target=“_blank”>
+                            <span class="fa-stack fa-2x">
+                                <i class="fa fa-circle fa-stack-2x" style="color: #e61f26;"></i>
+                                <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                            </span></a>
+                            </li>
+                        </ul>
+                        <h5>Sign up for our newsletters</h5>
+                        <form action="" method="post" class="form-inline contactForm" role="form">
+                            <div class="form-group">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                                <div class="validation"></div>
+                            </div>
+                            <button type="submit" class="btn btn-theme">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <br/>
+                    <p style="color: #e61f26;">Copyright &copy; Bindu Travels and Tours Ltd. All rights reserved.</p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
     
     <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
