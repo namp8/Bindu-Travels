@@ -89,7 +89,6 @@ button.navbar-toggle {
 	color: #fff;
 }
 
-
 /* ================================
 margin, padding
 ================================= */
@@ -331,7 +330,7 @@ About
 ================================= */
 
 #about .about-img {
-  height: 350px;
+  height: 700px;
   overflow: hidden;
 }
 
@@ -342,7 +341,8 @@ About
 
 @media (max-width: 768px) {
   #about .about-img {
-    height: auto;
+    height: 300px;
+    overflow: hidden;
   }
   #about .about-img img {
     margin-left: 0;

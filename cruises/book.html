@@ -22,7 +22,7 @@
 
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-default fixed-to-top"  role="navigation">
+    <nav class="navbar navbar-default fixed-to-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -77,84 +77,106 @@
     </nav>
 
 
-  <section id="contact" class="home-section bg-gray">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-offset-2 col-md-8">
-          <div class="section-heading">
-            <h2>Book a cruise</h2>
-            <div class="heading-line"></div>
-            <p>Your Adventure Starts Here! Please fill the form and you will be contacted shortly. </p>
-          </div>
+    <section id="contact" class="home-section bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8">
+                    <div class="section-heading">
+                        <h2>Book a cruise</h2>
+                        <div class="heading-line"></div>
+                        <p>Your Adventure Starts Here! Please fill the form and you will be contacted shortly. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="sendmessage">Your message has been sent. Thank you!</div>
+                    <div id="errormessage"></div>
+
+                    <form action="" method="post" class="form-horizontal contactForm" role="form">
+                        <div class="col-md-offset-2 col-md-8">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                <div class="validation"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-offset-2 col-md-8">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                                <div class="validation"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-offset-2 col-md-8">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="text" name="phone" class="form-control" id="phone" placeholder="Your Phone Number" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                <div class="validation"></div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-offset-2 col-md-8">
+                            <div class="form-group">
+                                <label for="sel1">Preferred Destination</label>
+                                <select class="form-control" id="sel1">
+                                    <option>Alaska</option>
+                                    <option>Asia</option>
+                                    <option>Australia / New Zealand </option>
+                                    <option>Bahamas</option>
+                                    <option>Bermuda</option>
+                                    <option>Canada / New England</option>
+                                    <option>Caribbean</option>
+                                    <option>Cuba</option>
+                                    <option>Dubai</option>
+                                    <option>Europe</option>
+                                    <option>Jamaica</option>
+                                  </select>
+                            </div>
+                        </div>
+
+                        <div class="col-md-offset-2 col-md-8">
+                            <div class="form-group">
+                                <label for="sel1">Duration</label>
+                                <select class="form-control" id="sel1">
+                                    <option>2-5</option>
+                                    <option>6-9</option>
+                                    <option>10-14</option>
+                                    <option>15-17</option>
+                                    <option>18+</option>
+                                  </select>
+                            </div>
+                        </div>
+
+                        <div class="col-md-offset-2 col-md-8">
+                            <div class="form-group">
+                                <label for="sel1">Additional Comments</label>
+                                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Additional Comment"></textarea>
+                                <div class="validation"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-8">
+                                <button type="submit" class="btn btn-theme btn-lg btn-block">Send message</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+
+
+                <div class="col-md-6 about-img">
+                    <img src="../img/products/cruises/harmony.mp4" width="100%" alt="">
+                </div>
+            </div>
+
         </div>
-      </div>
+    </section>
 
-      <div class="row">
-        <div class="col-md-6">
-          <div id="sendmessage">Your message has been sent. Thank you!</div>
-          <div id="errormessage"></div>
-
-          <form action="" method="post" class="form-horizontal contactForm" role="form">
-            <div class="col-md-offset-2 col-md-8">
-              <div class="form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                <div class="validation"></div>
-              </div>
-            </div>
-
-            <div class="col-md-offset-2 col-md-8">
-              <div class="form-group">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                <div class="validation"></div>
-              </div>
-            </div>
-            <div class="col-md-offset-2 col-md-8">
-              <div class="form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Phone Number" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                <div class="validation"></div>
-              </div>
-            </div>
-
-              
-            <div class="col-md-offset-2 col-md-8">
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Preferred Destination" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validation"></div>
-              </div>
-            </div>
-              
-            <div class="col-md-offset-2 col-md-8">
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Duration" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validation"></div>
-              </div>
-            </div>
-
-            <div class="col-md-offset-2 col-md-8">
-              <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Additional Comment"></textarea>
-                <div class="validation"></div>
-              </div>
-            </div>
-            <div class="form-group">
-              <div class="col-md-offset-2 col-md-8">
-                <button type="submit" class="btn btn-theme btn-lg btn-block">Send message</button>
-              </div>
-            </div>
-          </form>
-
-        </div>
-          
-          
-        <div class="col-md-6 about-img">
-          <img src="../img/products/cruises/harmony.mp4" width="100%" alt="">
-        </div>
-      </div>
-
-    </div>
-  </section>
-    
-     <!-- Footer -->
+    <!-- Footer -->
     <footer>
         <div class="container">
 
