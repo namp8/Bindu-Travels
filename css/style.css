@@ -89,6 +89,13 @@ button.navbar-toggle {
 	color: #fff;
 }
 
+.img-square {
+  height: 250px;
+  width: 250px;
+  overflow: hidden;
+}
+
+
 /* ================================
 margin, padding
 ================================= */
