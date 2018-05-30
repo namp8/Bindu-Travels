@@ -805,6 +805,7 @@ more media queries
 }
 
 
+
 /*-----------------------------------------------------------------------------------*/
 /*  Portfolio
 /*-----------------------------------------------------------------------------------*/
@@ -866,6 +867,29 @@ more media queries
 }
 
 
+.img-gallery {
+ height: 150px;
+ overflow: hidden;
+}
+.img-gallery img {
+    height: 100%;
+    width: 100%;
+    
+}
+.bottom-right {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    
+	font-size: 25px;
+	text-transform: uppercase;
+    color: white;
+	font-weight: 600;
+	font-family: 'Montserrat', sans-serif;
+  text-align: right;
+}
+
+
 /* --- Map --- */
 .map{
 	position:relative;
@@ -888,4 +912,11 @@ more media queries
   text-align: center;
   width: 30px;
   white-space: nowrap;
+}
+
+
+/* Table */
+.points_table thead{
+	background: #e61f26;
+	color: #fff;
 }
