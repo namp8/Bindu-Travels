@@ -90,10 +90,16 @@ button.navbar-toggle {
 }
 
 .img-square {
-  height: 250px;
-  width: 250px;
+  height: 200px;
+  width: 200px;
   overflow: hidden;
 }
+.text-full {
+  width: 1000px;
+  height: 50px;
+  overflow: hidden;
+}
+
 
 
 /* ================================
@@ -465,7 +471,6 @@ Works
 	display: inline-block;
 	margin: 10px 5px 0 5px;
 	vertical-align: top;
-	height: 250px;
 }
 
 .og-grid li > a,
@@ -545,7 +550,6 @@ Works
 	width: 50%;
 	float: left;
 	height: 100%;
-	overflow: hidden;
 	position: relative;
 }
 
@@ -575,10 +579,11 @@ Works
 	color: #555;
 }
 
+
 .og-details a {
 	font-weight: 700;
 	display: inline-block;
-	margin: 30px 0 0;
+	margin: 10px 0 0;
 	outline: none;
 }
 
@@ -878,11 +883,10 @@ more media queries
 }
 .bottom-right {
     position: absolute;
-    bottom: 5px;
+    top: 5px;
     right: 5px;
     
-	font-size: 25px;
-	text-transform: uppercase;
+	font-size: 20px;
     color: white;
 	font-weight: 600;
 	font-family: 'Montserrat', sans-serif;
