@@ -100,7 +100,12 @@ button.navbar-toggle {
   overflow: hidden;
 }
 
-
+.list-group-item {
+background-color: transparent;
+border-top: 1px solid #ddd;
+border-radius: 0;
+color: #3A3A3A;
+}
 
 /* ================================
 margin, padding
@@ -878,8 +883,6 @@ more media queries
 }
 .img-gallery img {
     height: 100%;
-    width: 100%;
-    
 }
 .bottom-right {
     position: absolute;
