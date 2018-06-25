@@ -96,7 +96,6 @@ button.navbar-toggle {
 }
 .text-full {
   width: 1000px;
-  height: 50px;
   overflow: hidden;
 }
 
@@ -891,9 +890,10 @@ more media queries
     
 	font-size: 20px;
     color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 	font-weight: 600;
 	font-family: 'Montserrat', sans-serif;
-  text-align: right;
+    text-align: right;
 }
 
 
